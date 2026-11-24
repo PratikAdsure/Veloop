@@ -1,0 +1,141 @@
+.card {
+  min-width: 0;
+  min-height: 171px;
+  padding: 12px 9px 9px;
+
+  border: 1px solid;
+  border-radius: 12px;
+
+  position: relative;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(
+    155deg,
+    rgba(51, 17, 111, 0.75),
+    rgba(12, 15, 48, 0.95)
+  );
+}
+
+.purple {
+  border-color: #8333d8;
+  background: linear-gradient(145deg, #38106e, #101338);
+}
+
+.blue {
+  border-color: #176ee7;
+  background: linear-gradient(145deg, #073e8a, #081a45);
+}
+
+.green {
+  border-color: #079c89;
+  background: linear-gradient(145deg, #005b58, #062b3a);
+}
+
+.violet {
+  border-color: #7434bb;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 5px 9px;
+
+  border-radius: 10px 0 9px 0;
+
+  color: white;
+  background: #a32de0;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.blue .tag {
+  background: #1975e9;
+}
+
+.green .tag {
+  background: #08ad8e;
+}
+
+.conversion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin: 12px 0 7px;
+}
+
+.gem {
+  font-size: 32px;
+  filter: drop-shadow(0 0 7px #9e5aff);
+}
+
+.arrow {
+  color: #d4b6ff;
+  font-size: 20px;
+}
+
+.coin {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffe58d, #e58b08);
+
+  border: 2px solid #ffcc54;
+  color: #fff5bd;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.card h3 {
+  font-size: 13px;
+  margin: 3px;
+}
+
+.card h4 {
+  color: #d49aff;
+  font-size: 11px;
+  margin: 2px;
+}
+
+.card button {
+  width: 100%;
+
+  border: 0;
+  border-radius: 7px;
+
+  color: white;
+  font-size: 10px;
+  font-weight: 800;
+
+  padding: 7px 3px;
+  margin: 9px 0 6px;
+
+  background: linear-gradient(90deg, #8a2fe8, #6028ce);
+}
+
+.blue button {
+  background: linear-gradient(90deg, #1679f4, #1756c7);
+}
+
+.green button {
+  background: linear-gradient(90deg, #09b99a, #079c83);
+}
+
+.card p {
+  color: #a9b8d5;
+  font-size: 9px;
+  margin: auto 0 0;
+}

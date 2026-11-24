@@ -1,0 +1,98 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+
+  display: grid;
+  place-items: center;
+
+  padding: 16px;
+
+  background: rgba(0, 4, 15, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  width: min(420px, 100%);
+  padding: 25px;
+
+  position: relative;
+
+  border: 1px solid #344c7a;
+  border-radius: 18px;
+
+  background: linear-gradient(145deg, #10264c, #071329);
+
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+
+  color: #9db0d2;
+  background: none;
+  border: 0;
+  font-size: 26px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.modal h2 {
+  margin: 5px 0;
+  font-size: 21px;
+}
+
+.modal p {
+  color: #91a6c9;
+  font-size: 12px;
+}
+
+.summary {
+  padding: 5px 13px;
+  border: 1px solid #263e67;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.summary div {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0;
+  border-bottom: 1px solid #21375b;
+  font-size: 12px;
+}
+
+.summary span {
+  color: #94a9cc;
+}
+
+.confirm,
+.cancel {
+  width: 100%;
+  padding: 11px;
+  border-radius: 9px;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+.confirm {
+  border: 0;
+  color: white;
+  background: linear-gradient(90deg, #8b35ed, #4c65ee);
+}
+
+.confirm:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cancel {
+  color: #b4c4e0;
+  border: 1px solid #34496e;
+  background: transparent;
+}

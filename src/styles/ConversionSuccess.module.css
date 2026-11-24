@@ -1,0 +1,76 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+
+  display: grid;
+  place-items: center;
+
+  padding: 16px;
+
+  background: rgba(0, 4, 15, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  width: min(370px, 100%);
+  padding: 30px 24px;
+
+  border: 1px solid #286b69;
+  border-radius: 18px;
+
+  text-align: center;
+
+  background: linear-gradient(145deg, #103a45, #08162d);
+}
+
+.check {
+  width: 58px;
+  height: 58px;
+
+  margin: auto auto 14px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: #062b28;
+  background: #4ce0b7;
+
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.modal h2 {
+  margin: 0 0 7px;
+  font-size: 21px;
+}
+
+.modal p,
+.modal small {
+  color: #a7bfd0;
+  font-size: 12px;
+}
+
+.amount {
+  margin: 18px 0 3px;
+
+  color: #55edc1;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.modal button {
+  width: 100%;
+  padding: 11px;
+  margin-top: 20px;
+
+  border: 0;
+  border-radius: 9px;
+
+  color: #062b28;
+  background: #4ce0b7;
+
+  font-weight: 900;
+}

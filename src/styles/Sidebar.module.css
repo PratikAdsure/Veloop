@@ -1,0 +1,201 @@
+.sidebar {
+  width: 190px;
+  flex: 0 0 190px;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 14px 10px;
+
+  border-right: 1px solid #14284a;
+
+  background: rgba(3, 13, 31, 0.95);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  height: 43px;
+  padding: 0 5px 15px;
+
+  border-bottom: 1px solid #14284a;
+
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.brand > span {
+  color: #ffd05a;
+  font-size: 29px;
+}
+
+.brand small {
+  display: block;
+  color: #b4c2dc;
+  font-size: 7px;
+  letter-spacing: 3px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 13px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 9px 8px;
+
+  border-radius: 8px;
+
+  color: #a8b8d3;
+  font-size: 10px;
+}
+
+.sidebar nav a span {
+  width: 15px;
+  font-size: 15px;
+  color: #8da8d0;
+}
+
+.sidebar nav a.active {
+  color: white;
+
+  border: 1px solid #7734e8;
+
+  background: linear-gradient(
+    90deg,
+    #4d1c9c,
+    #201052
+  );
+
+  box-shadow: 0 0 15px #722aff55;
+}
+
+.profile {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+
+  margin-top: auto;
+  padding: 12px 4px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: #30228c;
+}
+
+.profile div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile small {
+  color: #a2b2cd;
+  font-size: 8px;
+}
+
+.profile b {
+  font-size: 10px;
+}
+
+.profile span {
+  width: fit-content;
+  padding: 2px 7px;
+  border-radius: 9px;
+  background: #6535dd;
+  font-size: 8px;
+}
+
+.promo {
+  padding: 10px;
+
+  border: 1px solid #233b69;
+  border-radius: 11px;
+
+  background: linear-gradient(
+    145deg,
+    #10244b,
+    #07142d
+  );
+}
+
+.promoGem {
+  text-align: center;
+  padding: 5px;
+  font-size: 36px;
+}
+
+.promo strong {
+  font-size: 11px;
+}
+
+.promo p {
+  color: #9badca;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.promo button {
+  width: 100%;
+  padding: 7px;
+
+  border: 0;
+  border-radius: 7px;
+
+  color: white;
+
+  background: linear-gradient(
+    90deg,
+    #842de8,
+    #5232d7
+  );
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    width: 62px;
+    flex-basis: 62px;
+    padding: 10px 6px;
+  }
+
+  .brand {
+    justify-content: center;
+    padding: 0 0 12px;
+  }
+
+  .brand div,
+  .profile,
+  .promo {
+    display: none;
+  }
+
+  .sidebar nav a {
+    justify-content: center;
+    font-size: 0;
+  }
+
+  .sidebar nav a span {
+    font-size: 17px;
+  }
+}

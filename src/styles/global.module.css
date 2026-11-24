@@ -1,0 +1,24 @@
+:global(*) {
+  box-sizing: border-box;
+}
+
+:global(html) {
+  min-width: 320px;
+  background: #050b18;
+}
+
+:global(body) {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f5f7ff;
+}
+
+:global(button) {
+  font: inherit;
+  cursor: pointer;
+}
+
+:global(a) {
+  color: inherit;
+  text-decoration: none;
+}

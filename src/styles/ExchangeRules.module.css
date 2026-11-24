@@ -1,0 +1,58 @@
+.panel {
+  padding: 13px;
+
+  border: 1px solid #1b315b;
+  border-radius: 13px;
+
+  background: rgba(5, 20, 44, 0.82);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 9px;
+}
+
+.heading h3 {
+  margin: 0;
+  font-size: 12px;
+}
+
+.heading button {
+  border: 0;
+  background: none;
+  color: #5f9bff;
+  font-size: 9px;
+}
+
+.rule {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin: 7px 0;
+}
+
+.rule > span {
+  width: 14px;
+  height: 14px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: #042c29;
+  background: #23c9a5;
+
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.rule p {
+  margin: 0;
+  color: #aabbd6;
+  font-size: 9px;
+  line-height: 1.45;
+}
